@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+
+<body>
+    <h3>for</h3>
+    <p id="for"></p>
+
+    <h3>while</h3>
+    <p id="while"></p>
+</body>
+
+<script>
+    //laço for
+    let text = "";
+
+    for (let cont = 1; cont <= 200; cont++) {
+        text = text + cont + "<br>";
+    }
+    document.getElementById("for").innerHTML = text;
+
+    //laço while
+    let i = 1;
+    let res = "";
+
+    while (i <= 200) {
+        res = res + i + "<br>"
+        i++;
+    }
+    document.getElementById("while").innerHTML = res;
+</script>
+
+</html>

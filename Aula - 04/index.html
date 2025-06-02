@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculodara de Preço</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <label>preço do Alcool: </label>
+        <input type="number" id="pcralcool"></br>
+        <label>preço do Gasolina: </label>
+        <input type="number" id="pcrgasolina"></br>
+
+    </form>
+    <button onclick="calcular()" class="botao">calcular</button>
+    <p id="resultado"></p>
+
+
+</body>
+<script>
+    function calcular() {
+        let alcool = Number(document.getElementById("pcralcool").value);
+        let gasolina = Number(document.getElementById("pcrgasolina").value);
+
+        let valor = alcool/gasolina;
+        let resultado = document.getElementById("resultado"); 
+
+        if(valor > 0.7){
+            resultado.innerHTML = "melhor usar gasolina ^____^"
+
+        }
+        else{
+            resultado.innerHTML = "melhor usar Alcool (～￣▽￣)～"
+        }
+
+    }
+</script>
+
+</html>

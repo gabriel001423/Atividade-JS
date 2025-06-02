@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+
+<body>
+    <form>
+        <h3>Numeros</h3>
+        <label>numero 1: </label>
+        <input type="number" id="num1"></br>
+        <label>numero 2: </label>
+        <input type="number" id="num2">
+    </form>
+    <button onclick="verificar()">verificar</button>
+    <p id="resultado"></p>
+
+
+</body>
+<script>
+    function verificar() {
+        let num1 = Number(document.getElementById("num1").value); 
+        let num2 = Number(document.getElementById("num2").value);
+        let resultado = document.getElementById("resultado");
+
+        if (num1 > num2) {
+            resultado.innerHTML = "o maior e: " + num1;
+        }
+        else if (num2 > num1) {
+            resultado.innerHTML = "o maior e: " + num2;
+        }
+        else{
+            resultado.innerHTML = " os numeros sao iguais (～￣▽￣)～";
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(155, 155, 155);
+    padding: 5em;
+    text-align: center;
+    color: aliceblue;
+}
+
+#btnmulher{
+    background-color: rgb(255, 117, 244);
+    padding: 1em;
+    border-radius: 30px;
+    color: aliceblue;
+}
+
+#btnhomem{
+    background-color: rgb(117, 216, 255);
+    padding: 1em;
+    border-radius: 30px;
+    color: aliceblue;
+}
+
+#volta{
+    background-color: rgb(209, 209, 209);
+    border-radius: 30px;
+}
